@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+    height: 100%;
+   
+    background: #181717;
+    background-image: linear-gradient(rgba(0, 255, 0, .7) .1em, transparent .1em), linear-gradient(90deg, rgba(0, 255, 0, .7) .1em, transparent .1em);
+    background-size: 7.27em 7em;
+    display: grid;
+    place-items: center;
+  }
+
+.holder {
+  width: 550px;
+  height: 550px;
+  margin: 0;
+  background-color: #222222;
+  box-shadow: 0 20px 40px rgb(24, 23, 23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding: 0;
+  margin-top: 205px;
+ 
+}
+
+.holder h1 {
+  color: limegreen;
+  margin: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.holder input {
+  padding: 20px;
+  width: 450px;
+  background-color: #333333;
+  color: whitesmoke;
+  margin: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.holder button {
+  background-color: limegreen;
+  margin: 20px;
+  padding: 20px;
+  width: 450px;
+  border-radius: 10px;
+  border: none;
+}
+
+.holder button  {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.holder button:hover{
+  border: 2px solid white;
+}
+
+.holder div {
+  width: 450px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.holder div a {
+  text-decoration: none;
+  color: white;
+}
+
+.holder p{
+  width: 80%;
+  color: red;
+  text-align: left;
+  font-size: 13px;
+  margin-top: -10px;
+}
+
+.error{
+  color: red;
+}
+
+.holder div :nth-child(2) {
+  color: lawngreen;
+}
+
+@media screen and (max-width:540px) {
+  body{
+    width: 80%;
+  }
+  .holder{
+    width: 100%;
+  }
+}
